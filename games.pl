@@ -534,7 +534,7 @@ esrb_rating(secret-neighbor,everyone-10-plus).
 esrb_rating(skate-3,teen).
 esrb_rating(skatebird,teen).
 esrb_rating(sniper-elite-4,mature).
-esrb_rating(sniper-elite-5,rating-pending).
+esrb_rating(sniper-elite-5,mature).
 esrb_rating(snowrunner,everyone).
 esrb_rating(ssx,everyone-10-plus).
 esrb_rating(star-wars-battlefront,teen).
