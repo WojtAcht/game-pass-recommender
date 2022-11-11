@@ -1,3 +1,7 @@
+:- module(similarity,
+    [similarity_coefficient/3]
+).
+
 genre_coefficient(Game1, Game2, GenreCoefficient) :- 
     setof(Genre1, Genre1^genre(Game1, Genre1), Game1Genres), 
     setof(Genre2, Genre2^genre(Game2, Genre2), Game2Genres), 
@@ -57,7 +61,7 @@ playtime_coefficient(Game1, Game2, PlaytimeCoefficient) :-
 playtime_coefficient(Game1, Game2, PlaytimeCoefficient) :- 
     playtime(Game1, Playtime1),
     playtime(Game2, Playtime2),
-    PlaytimeCoefficient is 1 - abs(Playtime2 - Playtime1)/46,
+    PlaytimeCoefficient is 1 - abs(Playtime2 - Playtime1) / 46,
     !.
 
 playtime_coefficient(_, _, PlaytimeCoefficient) :-
@@ -83,5 +87,3 @@ similarity_coefficient(Game1, Game2, SimilarityCoefficient) :-
     WeightSum is 8,
     SimilarityCoefficient is (WeightedGenre+ESRB+Released+Playtime+WeightedRating)/WeightSum,
     !.
-
-% similarity_coefficient(battlefield-3, mass-effect-2, X).
