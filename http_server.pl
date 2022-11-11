@@ -10,7 +10,7 @@
 
 :- set_setting(http:cors, [*]).
 
-:- http_server(http_dispatch, [port(6000)]).
+:- http_server(http_dispatch, [port(3000)]).
 :- http_handler('/api/v1/games', get_games(Method), [method(Method)]).
 % :- http_handler('/api/v1/games/recommend', recommend_games(Method), [method(Method)]).
 
