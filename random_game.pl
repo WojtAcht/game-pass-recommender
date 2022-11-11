@@ -17,10 +17,9 @@ random_game(RandomGame) :-
 n_random_games(N, RandomGames) :- 
     n_random_games(N, [], RandomGames).
 n_random_games(0, CurrentRandomGames, RandomGames) :- 
-    RandomGames = CurrentRandomGames.
+    maplist(term_string, CurrentRandomGames, RandomGames).
 n_random_games(N, CurrentRandomGames, RandomGames) :- 
     random_game(G),
     N1 is N-1,
     append(CurrentRandomGames, [G], NewCurrentRandomGames),
-    n_random_games(N1, NewCurrentRandomGames, RandomGamesAtoms),
-    maplist(term_string, RandomGamesAtoms, RandomGames).
+    n_random_games(N1, NewCurrentRandomGames, RandomGames).
