@@ -87,3 +87,14 @@ similarity_coefficient(Game1, Game2, SimilarityCoefficient) :-
     WeightSum is 8,
     SimilarityCoefficient is (WeightedGenre+ESRB+Released+Playtime+WeightedRating)/WeightSum,
     !.
+
+are_identical(X, Y) :- X == Y.
+
+most_similar_game(Game, RecommendedGame) :- 
+    findall(G, name(G, _), AllGamesIncludingGame),
+    exclude(are_identical(Game), AllGamesIncludingGame, AllGames),
+    maplist(similarity_coefficient(Game), AllGames, Coefficients),
+    max_list(Coefficients, MaxCoefficient),
+    nth0(RecommendedGameIndex, Coefficients, MaxCoefficient),
+    nth0(RecommendedGameIndex, AllGames, RecommendedGame).
+
