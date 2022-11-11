@@ -1,5 +1,8 @@
 :- module(similarity,
-    [similarity_coefficient/3]
+    [
+        most_similar_game/2,
+        most_similar_games/4
+    ]
 ).
 
 genre_coefficient(Game1, Game2, GenreCoefficient) :- 
@@ -88,8 +91,6 @@ similarity_coefficient(Game1, Game2, SimilarityCoefficient) :-
     SimilarityCoefficient is (WeightedGenre+ESRB+Released+Playtime+WeightedRating)/WeightSum,
     !.
 
-are_identical(X, Y) :- X == Y.
-
 most_similar_game(Game, RecommendedGame) :- 
     findall(G, name(G, _), AllGamesIncludingGame),
     exclude(are_identical(Game), AllGamesIncludingGame, AllGames),
@@ -98,3 +99,17 @@ most_similar_game(Game, RecommendedGame) :-
     nth0(RecommendedGameIndex, Coefficients, MaxCoefficient),
     nth0(RecommendedGameIndex, AllGames, RecommendedGame).
 
+all_games_coefficients(AllGames, Game, Coefficients) :- 
+    maplist(similarity_coefficient(Game), AllGames, Coefficients).
+
+most_similar_games(Games, Ratings, N, RecommendedGames) :- 
+    findall(G, name(G, _), AllIncludingGames),
+    exclude(is_member(Games), AllIncludingGames, AllGames),
+    length(AllGames, GamesCount),
+    build(0, GamesCount, ZeroVector),
+    maplist(all_games_coefficients(AllGames), Games, GamesCoefficients),
+    maplist(multiply_list, GamesCoefficients, Ratings, GamesCoefficientsWithRatings),
+    sum_of_vectors_list(GamesCoefficientsWithRatings, ZeroVector, Coefficients),
+    maplist(vector, Coefficients, AllGames, CoefficientsWithGames),
+    n_largest(CoefficientsWithGames, N, NMaxCoefficientsWithGames),
+    maplist(second, NMaxCoefficientsWithGames, RecommendedGames).
