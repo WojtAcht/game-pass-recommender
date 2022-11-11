@@ -1,6 +1,7 @@
 :- module(random_game,
     [
-        random_game/1
+        random_game/1,
+        n_random_games/2
     ]
 ).
 
@@ -21,4 +22,5 @@ n_random_games(N, CurrentRandomGames, RandomGames) :-
     random_game(G),
     N1 is N-1,
     append(CurrentRandomGames, [G], NewCurrentRandomGames),
-    n_random_games(N1, NewCurrentRandomGames, RandomGames).
+    n_random_games(N1, NewCurrentRandomGames, RandomGamesAtoms),
+    maplist(term_string, RandomGamesAtoms, RandomGames).

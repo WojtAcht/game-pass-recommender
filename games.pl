@@ -1,3 +1,18 @@
+:- module(games,
+    [
+        added/2,
+        esrb_rating/2,
+        genre/2,
+        name/2,
+        playtime/2,
+        rating/2,
+        rating_top/2,
+        ratings/3,
+        ratings_count/2,
+        released/2
+    ]
+).
+
 added(7-days-to-die,3021).
 added(a-memoir-blue,252).
 added(a-plague-tale-requiem,698).
