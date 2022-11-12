@@ -1,35 +1,39 @@
 :- module(random_game,
     [
-        n_random_games/2
+        n_random_games/2,
+        game/2
     ]
 ).
 
-random_game_slug(RandomGame) :-  
+:- use_module(games).
+:- use_module(utils).
+
+random_game_id(RandomGameId) :-  
     findall(RatingsCount, ratings_count(G, RatingsCount), RatingsCountList),
     sum(RatingsCountList, SumOfRatings),
     length(RatingsCountList, RatingsCountListLength),
     build(SumOfRatings, RatingsCountListLength, RepeatedSumOfRatings),
     maplist(divide, RatingsCountList, RepeatedSumOfRatings, Probabilities),
     findall(G, ratings_count(G, RatingsCount), GamesList),
-    choice(GamesList, Probabilities, RandomGame).
+    choice(GamesList, Probabilities, RandomGameId).
 
-n_random_game_slugs(N, RandomGames) :- 
-    n_random_game_slugs(N, [], RandomGames).
-n_random_game_slugs(0, CurrentRandomGames, RandomGames) :- 
-    RandomGames = CurrentRandomGames.
-n_random_game_slugs(N, CurrentRandomGames, RandomGames) :- 
-    random_game_slug(G),
+n_random_game_ids(N, RandomGameIds) :- 
+    n_random_game_ids(N, [], RandomGameIds).
+n_random_game_ids(0, CurrentRandomGameIds, RandomGameIds) :- 
+    RandomGameIds = CurrentRandomGameIds.
+n_random_game_ids(N, CurrentRandomGameIds, RandomGameIds) :- 
+    random_game_id(G),
     N1 is N-1,
-    append(CurrentRandomGames, [G], NewCurrentRandomGames),
-    n_random_game_slugs(N1, NewCurrentRandomGames, RandomGames).
+    append(CurrentRandomGameIds, [G], NewCurrentRandomGameIds),
+    n_random_game_ids(N1, NewCurrentRandomGameIds, RandomGameIds).
 
-game(Id, Image, Name, Game) :-
-    Game = game{id: Id, name: Name, image: Image}.
+game(Id, Game) :-
+    name(Id, Name),
+    image(Id, Image),
+    term_string(Id, StringId),
+    Game = game{id: StringId, name: Name, image: Image}.
 
 n_random_games(N, RandomGames) :-
-    n_random_game_slugs(N, RandomGameSlugs),
-    maplist(term_string, RandomGameSlugs, RandomGameStrings),
-    maplist(name, RandomGameSlugs, RandomGameNames),
-    maplist(image, RandomGameSlugs, RandomGameImages),
-    maplist(game, RandomGameStrings, RandomGameImages, RandomGameNames, RandomGames).
+    n_random_game_ids(N, RandomGameIds),
+    maplist(game, RandomGameIds, RandomGames).
     

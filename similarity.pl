@@ -5,6 +5,10 @@
     ]
 ).
 
+:- use_module(games).
+:- use_module(utils).
+:- use_module(random_game).
+
 genre_coefficient(Game1, Game2, GenreCoefficient) :- 
     setof(Genre1, Genre1^genre(Game1, Genre1), Game1Genres), 
     setof(Genre2, Genre2^genre(Game2, Genre2), Game2Genres), 
@@ -102,14 +106,16 @@ most_similar_game(Game, RecommendedGame) :-
 all_games_coefficients(AllGames, Game, Coefficients) :- 
     maplist(similarity_coefficient(Game), AllGames, Coefficients).
 
-most_similar_games(Games, Ratings, N, RecommendedGames) :- 
-    findall(G, name(G, _), AllIncludingGames),
-    exclude(is_member(Games), AllIncludingGames, AllGames),
-    length(AllGames, GamesCount),
-    build(0, GamesCount, ZeroVector),
-    maplist(all_games_coefficients(AllGames), Games, GamesCoefficients),
+most_similar_games(GameIds, Ratings, N, RecommendedGames) :- 
+    findall(G, name(G, _), AllIdsIncludingGames),
+    % We should not recommend games from GameIds:
+    exclude(is_member(GameIds), AllIdsIncludingGames, AllGameIds),
+    length(AllGameIds, AllGamesCount),
+    build(0, AllGamesCount, ZeroVector),
+    maplist(all_games_coefficients(AllGameIds), GameIds, GamesCoefficients),
     maplist(multiply_list, GamesCoefficients, Ratings, GamesCoefficientsWithRatings),
     sum_of_vectors_list(GamesCoefficientsWithRatings, ZeroVector, Coefficients),
-    maplist(vector, Coefficients, AllGames, CoefficientsWithGames),
+    maplist(vector, Coefficients, AllGameIds, CoefficientsWithGames),
     n_largest(CoefficientsWithGames, N, NMaxCoefficientsWithGames),
-    maplist(second, NMaxCoefficientsWithGames, RecommendedGames).
+    maplist(second, NMaxCoefficientsWithGames, RecommendedGameIds),
+    maplist(game, RecommendedGameIds, RecommendedGames).

@@ -12,13 +12,24 @@
 
 :- http_server(http_dispatch, [port(3000)]).
 :- http_handler('/api/v1/games', get_games(Method), [method(Method)]).
-% :- http_handler('/api/v1/games/recommend', recommend_games(Method), [method(Method)]).
+:- http_handler('/api/v1/games/recommend', recommend_games(Method), [method(Method)]).
 
 get_games(options, Request) :-
-  cors_enable(Request, [methods([get])]),
-  format('~n').
+    cors_enable(Request, [methods([get])]),
+    format('~n').
 
 get_games(get, Request) :-
-  cors_enable(Request, [methods([get])]),
-  n_random_games(5, RandomGames),
-  reply_json_dict(result{games: RandomGames}).
+    cors_enable(Request, [methods([get])]),
+    n_random_games(5, RandomGames),
+    reply_json_dict(result{games: RandomGames}).
+
+recommend_games(options, Request) :-
+    cors_enable(Request, [methods([post])]),
+    format('~n').
+
+recommend_games(post, Request) :-
+    cors_enable(Request, [methods([post])]),
+    http_read_json_dict(Request, _{games:GameIdStrings, ratings:Ratings}),
+    maplist(string_term, GameIdStrings, GameIds),
+    most_similar_games(GameIds, Ratings, 5, RecommendedGames),
+    reply_json_dict(result{games: RecommendedGames}).

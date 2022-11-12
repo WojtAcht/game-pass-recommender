@@ -11,7 +11,8 @@
         vectors_sum/3,
         sum_of_vectors_list/3,
         are_identical/2,
-        n_largest/3
+        n_largest/3,
+        string_term/2
     ]
 ).
 
@@ -63,3 +64,5 @@ sum_of_vectors_list([V | T], CurrentResult, Result) :-
 divide(X, Y, Z) :- Z is X / Y.
 is_member(List, Element) :- member(Element, List).
 are_identical(X, Y) :- X == Y.
+
+string_term(X,Y) :- term_string(Y,X).
