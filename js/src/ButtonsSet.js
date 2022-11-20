@@ -1,16 +1,3 @@
-// class ButtonsSet { 
-
-//     render() => {
-//         return {
-//           <div className="my-button">
-//             <Button type="button" value="1" variant="success" onClick={() => Rate(gameIndex, 1)} > Like </Button>{' '}
-//             <Button type="button" value="0" variant="dark" onClick={() => Rate(gameIndex, 0)} > Neutral </Button>{' '}
-//             <Button type="button" value="-1" variant="danger" onClick={() => Rate(gameIndex, -1)} > Dislike </Button>{' '}
-//           </div>
-//         }
-//     }
-// }
-
 import Button from 'react-bootstrap/Button';
 import React, { useState } from "react";
 
