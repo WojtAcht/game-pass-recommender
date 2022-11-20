@@ -12,7 +12,8 @@ function App() {
   const Rate = (gameIndex, value) => {
     const newRatings = ratings;
     newRatings[gameIndex] = value;
-    console.log(value);
+    console.log(`Rated game ${games[gameIndex].name} with ${value}`);
+    console.log(`Current ratings: ${newRatings}`)
     setRatings(newRatings);
   }
 
@@ -28,6 +29,20 @@ function App() {
       .then(data => setRecommendations(data.games));
   }
 
+  const addGame = () => {
+    fetch('http://localhost:3000/api/v1/games')
+      .then((res) => res.json())
+      .then((data) => {
+        setGames([...games, data.games[0]]);
+        const newRatings = [...ratings, 0];
+        setRatings(newRatings);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+    
+  }
+
   useEffect(() => {
     fetch('http://localhost:3000/api/v1/games')
       .then((res) => res.json())
@@ -37,6 +52,7 @@ function App() {
       .catch((err) => {
         console.log(err.message);
       });
+    
   }, []);
 
   
@@ -56,7 +72,10 @@ function App() {
         })}&nbsp;
         </div>
         <div className="recommend-games">
-          <Button as="input" type="button" value="Submit" onClick={() => getRecommendations()} />{' '}
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit </Button>{' '}
+        </div>
+        <div className="add-game">
+          <Button type="button" value="AddGame" variant="outline-primary" onClick={() => addGame()} > Add more </Button>{' '}
         </div>&nbsp;
         <div className="recommended-games">
         {recommendations.map((game) => {
