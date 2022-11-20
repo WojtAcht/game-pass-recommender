@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ButtonsSet from './ButtonsSet';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -10,7 +12,8 @@ function App() {
   const Rate = (gameIndex, value) => {
     const newRatings = ratings;
     newRatings[gameIndex] = value;
-    console.log(value);
+    console.log(`Rated game ${games[gameIndex].name} with ${value}`);
+    console.log(`Current ratings: ${newRatings}`)
     setRatings(newRatings);
   }
 
@@ -26,6 +29,20 @@ function App() {
       .then(data => setRecommendations(data.games));
   }
 
+  const addGame = () => {
+    fetch('http://localhost:3000/api/v1/games')
+      .then((res) => res.json())
+      .then((data) => {
+        setGames([...games, data.games[0]]);
+        const newRatings = [...ratings, 0];
+        setRatings(newRatings);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+    
+  }
+
   useEffect(() => {
     fetch('http://localhost:3000/api/v1/games')
       .then((res) => res.json())
@@ -35,25 +52,32 @@ function App() {
       .catch((err) => {
         console.log(err.message);
       });
+    
   }, []);
+
+  
 
   return (
     <div className="App">
       <div className="posts-container">
+        <div className="ask-games">
         {games.map((game, gameIndex) => {
           return (
             <div className="post-card" key={game.id}>
               <h2 className="post-title">{game.name}</h2>
               <img src={game.image} className="App-logo" alt="logo" />
-              <div className="button">
-                <Button as="input" type="button" value="+1" onClick={() => Rate(gameIndex, 1)} />{' '}
-                <Button as="input" type="button" value="0" onClick={() => Rate(gameIndex, 0)} />{' '}
-                <Button as="input" type="button" value="-1" onClick={() => Rate(gameIndex, -1)} />
-              </div>
+              <ButtonsSet gameIndex={gameIndex} callback={Rate} />
             </div>
           );
-        })}
-        <Button as="input" type="button" value="Submit" onClick={() => getRecommendations()} />{' '}
+        })}&nbsp;
+        </div>
+        <div className="recommend-games">
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit </Button>{' '}
+        </div>
+        <div className="add-game">
+          <Button type="button" value="AddGame" variant="outline-primary" onClick={() => addGame()} > Add more </Button>{' '}
+        </div>&nbsp;
+        <div className="recommended-games">
         {recommendations.map((game) => {
           return (
             <div className="post-card" key={game.id}>
@@ -61,6 +85,7 @@ function App() {
               <img src={game.image} className="App-logo" alt="logo" />
             </div>);
         })}
+        </div>
       </div>
     </div>
   );
