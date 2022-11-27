@@ -33,9 +33,15 @@ function App() {
     fetch('http://localhost:3000/api/v1/games')
       .then((res) => res.json())
       .then((data) => {
-        setGames([...games, data.games[0]]);
-        const newRatings = [...ratings, 0];
-        setRatings(newRatings);
+        const gameIds = games.map((game) => game.id);
+        for(let i = 0; i < 5; i++){ 
+          if(!gameIds.includes(data.games[i].id)){
+            setGames([...games, data.games[i]]);
+            const newRatings = [...ratings, 0];
+            setRatings(newRatings);
+            break;
+          }
+        }
       })
       .catch((err) => {
         console.log(err.message);
