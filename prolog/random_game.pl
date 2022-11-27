@@ -23,10 +23,13 @@ n_random_game_ids(0, CurrentRandomGameIds, RandomGameIds) :-
     RandomGameIds = CurrentRandomGameIds.
 n_random_game_ids(N, CurrentRandomGameIds, RandomGameIds) :- 
     random_game_id(G),
-    \+ member(G, CurrentRandomGameIds),
-    N1 is N-1,
-    append(CurrentRandomGameIds, [G], NewCurrentRandomGameIds),
-    n_random_game_ids(N1, NewCurrentRandomGameIds, RandomGameIds).
+    ( \+ member(G, CurrentRandomGameIds) -> 
+      N1 is N-1,
+      append(CurrentRandomGameIds, [G], NewCurrentRandomGameIds),
+      n_random_game_ids(N1, NewCurrentRandomGameIds, RandomGameIds)
+    ;  n_random_game_ids(N, CurrentRandomGameIds, RandomGameIds)
+    ).
+
 
 game(Id, Game) :-
     name(Id, Name),
