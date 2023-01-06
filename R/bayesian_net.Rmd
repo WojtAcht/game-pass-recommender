@@ -12,6 +12,8 @@ rawg <- read.csv("rawg.csv")
 rawg[rawg$esrb_rating == "", ]["esrb_rating"] <- "unknown"
 ```
 
+### Powiązanie między ESRB i G.
+
 ```{r}
 # P(ESRB | G)
 sorted_esrb_ratings <- c("adults-only", "mature", "teen", "everyone-10-plus", "everyone")
@@ -46,13 +48,60 @@ for(rowname in rownames(rawg)){
 }
 ```
 
+### Powiązanie między RATING i G.
+
 ```{r}
-dag = model2network("[ESRB|G][G]")
+# P(RATING | G)
+ratings <- seq(0, 5, 0.25)
+get_rating_probabilities <- function(game) {
+  game_rating <- game$rating 
+  dnorm_values <- dnorm(ratings, mean=game_rating, sd=0.25)
+  dnorm_values / sum(dnorm_values)
+}
+```
+
+```{r}
+rating_probabilities <- c()
+for(rowname in rownames(rawg)){
+  row <- rawg[rowname, ]
+  rating_probabilities <- c(rating_probabilities, get_rating_probabilities(row))
+}
+```
+
+### Definicja Bayesowskiej sieci
+
+```{r}
+dag = model2network("[ESRB|G][RATING|G][G]")
 G.lv <- rawg$slug
+G.prob <- array(
+  # Uniform prior distribution for G
+  rep(1/length(rawg$slug), times=length(rawg$slug)), 
+  dim = length(rawg$slug), 
+  dimnames = list(G = G.lv)
+)
 ESRB.lv <- esrb_ratings
-# Uniform prior distribution for G
-G.prob <- rep(1/length(rawg$slug), times=length(rawg$slug))
-ESRB.prob <- array(esrb_probabilities, dim = c(length(esrb_ratings), length(rawg$slug)), dimnames = list(ESRB = ESRB.lv, G = G.lv))
+ESRB.prob <- array(
+  esrb_probabilities, 
+  dim = c(length(esrb_ratings), length(rawg$slug)), 
+  dimnames = list(ESRB = ESRB.lv, G = G.lv)
+)
+RATING.lv <- ratings
+RATING.prob <- array(
+  rating_probabilities, 
+  dim = c(length(ratings), length(rawg$slug)), 
+  dimnames = list(RATING = RATING.lv, G = G.lv)
+)
 plot(dag)
-View(ESRB.prob)
+cpt <- list(ESRB = ESRB.prob, RATING = RATING.prob, G = G.prob)
+bn <- custom.fit(dag, cpt)
+```
+
+### Inference
+
+```{r}
+library(gRain)
+junction <- compile(as.grain(bn))
+j_esrb <- setEvidence(junction, nodes = "ESRB", states = "mature")
+j_rating <- setEvidence(j_esrb, nodes = "RATING", states = "4.75")
+sort(querygrain(j_rating, nodes = "G")$G, decreasing=T)
 ```
