@@ -8,8 +8,7 @@ library(bnlearn)
 
 ```{r}
 rawg <- read.csv("rawg.csv")
-# TODO: przemyśleć unknown!
-rawg[rawg$esrb_rating == "", ]["esrb_rating"] <- "unknown"
+rawg[rawg["esrb_rating"] == "", ]["esrb_rating"] <- NA 
 ```
 
 ### Powiązanie między ESRB i G.
@@ -18,7 +17,8 @@ rawg[rawg$esrb_rating == "", ]["esrb_rating"] <- "unknown"
 # P(ESRB | G)
 sorted_esrb_ratings <- c("adults-only", "mature", "teen", "everyone-10-plus", "everyone")
 esrb_ratings <- unique(rawg$esrb_rating)
-esrb_ratings_distribution <- table(rawg$esrb_rating) / length(rawg$esrb_rating)
+esrb_ratings <- esrb_ratings[!is.na(esrb_ratings)]
+esrb_ratings_distribution <- table(rawg$esrb_rating) / sum(table(rawg$esrb_rating))
 
 get_esrb_probability <- function(esrb_rating, game) {
   game_esrb_rating <- game$esrb_rating
@@ -29,7 +29,7 @@ get_esrb_probability <- function(esrb_rating, game) {
   }
   else {
     esrb_ratings_distance <- abs(esrb_rating_idx - game_esrb_rating_idx)
-    unknown_rating_probability <- esrb_ratings_distribution["unknown"] + esrb_ratings_distribution["rating-pending"]
+    unknown_rating_probability <- esrb_ratings_distribution["rating-pending"]
     distance_nonlinear <- function(distance) { 2^(1-distance) }
     normalization_value <- sum(distance_nonlinear(abs(1:length(sorted_esrb_ratings) - game_esrb_rating_idx)))
     probability <- distance_nonlinear(esrb_ratings_distance) / normalization_value
