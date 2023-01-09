@@ -1,0 +1,351 @@
+,slug,name,playtime,released,rating,rating_top,ratings_count,suggestions_count,reviews_text_count,added,reviews_count,esrb_rating
+0,the-elder-scrolls-v-skyrim,The Elder Scrolls V: Skyrim,46,2011-11-11,4.42,5,4082,586,23,13742,4116,mature
+1,fallout-4,Fallout 4,42,2015-11-09,3.8,4,2912,444,17,11401,2937,mature
+2,payday-2,PAYDAY 2,9,2013-08-13,3.5,4,1874,410,13,11008,1889,adults-only
+3,terraria,Terraria,13,2011-05-16,4.04,4,1985,287,11,10208,2003,teen
+4,batman-arkham-knight,Batman: Arkham Knight,20,2015-06-23,4.22,4,2271,652,11,9787,2287,mature
+5,mirrors-edge,Mirror's Edge,3,2008-11-11,4.07,4,2035,323,10,9051,2048,teen
+6,hollow-knight,Hollow Knight,6,2017-02-23,4.41,5,2101,483,25,8838,2140,everyone-10-plus
+7,wolfenstein-the-new-order,Wolfenstein: The New Order,12,2014-05-19,4.19,4,2164,674,10,8419,2179,mature
+8,prey,Prey,10,2017-05-05,4.28,5,1884,618,19,8179,1916,mature
+9,dead-space,Dead Space,3,2008-10-13,4.37,5,1924,693,12,8113,1940,mature
+10,mass-effect-2,Mass Effect 2,21,2010-01-26,4.48,5,2613,583,11,8052,2631,mature
+11,for-honor,For Honor,7,2017-02-13,3.3,4,1514,701,6,8039,1522,mature
+12,stardew-valley,Stardew Valley,11,2016-02-25,4.4,5,1941,270,15,7958,1965,everyone-10-plus
+13,fallout-new-vegas,Fallout: New Vegas,12,2010-10-19,4.43,5,2146,582,9,7937,2161,mature
+14,hellblade-senuas-sacrifice,Hellblade: Senua's Sacrifice,6,2017-08-07,4.26,5,1931,455,32,7926,1976,mature
+15,mass-effect,Mass Effect,8,2007-11-16,4.4,5,2328,506,12,7695,2348,mature
+16,dishonored-2,Dishonored 2,13,2016-11-10,4.26,4,1672,684,10,7523,1686,mature
+17,jedi-the-fallen-order,Star Wars Jedi: Fallen Order,8,2019-11-15,4.15,4,1754,544,39,7272,1803,teen
+18,brutal-legend,Brutal Legend,5,2009-10-12,3.65,4,979,644,3,7187,984,
+19,psychonauts,Psychonauts,4,2005-04-01,4.02,5,840,418,9,6934,851,teen
+20,titanfall-2,Titanfall 2,5,2016-10-28,4.31,4,1744,592,24,6925,1774,mature
+21,cities-skylines,Cities: Skylines,8,2015-03-10,4.14,4,1282,427,6,6866,1291,everyone
+22,firewatch,Firewatch,5,2016-02-08,4.31,5,2138,396,21,6767,2168,mature
+23,minecraft,Minecraft,26,2009-05-10,4.42,5,2309,342,22,6759,2351,everyone-10-plus
+24,far-cry-5,Far Cry 5,18,2018-03-27,3.73,4,1768,388,22,6757,1798,mature
+25,inside,INSIDE,4,2016-06-28,4.4,5,2169,247,23,6735,2198,teen
+26,alien-isolation,Alien: Isolation,4,2014-10-05,4.2,5,1262,510,4,6713,1270,mature
+27,middle-earth-shadow-of-war,Middle-earth: Shadow of War,13,2017-09-27,3.84,4,1149,373,6,6697,1159,mature
+28,assassins-creed-odyssey,Assassin's Creed Odyssey,31,2018-10-05,4.02,4,1703,639,18,6596,1728,mature
+29,undertale,Undertale,5,2015-09-14,4.35,5,1529,119,18,6586,1554,everyone-10-plus
+30,assassins-creed-origins,Assassin's Creed Origins,32,2017-10-27,4.0,4,1733,321,19,6429,1757,mature
+31,tom-clancys-rainbow-six-siege-2,Tom Clancy's Rainbow Six Siege,29,2015-12-01,3.92,4,1317,453,8,6422,1329,teen
+32,battlefield-1,Battlefield 1,5,2016-10-21,3.81,4,1689,614,7,6337,1699,
+33,no-mans-sky,No Man's Sky,13,2016-08-09,3.68,4,1293,738,7,6219,1303,teen
+34,ark-survival-evolved,ARK: Survival Evolved,6,2015-06-02,3.11,3,474,586,2,6064,477,
+35,ori-and-the-blind-forest-definitive-edition,Ori and the Blind Forest: Definitive Edition,5,2016-04-27,4.43,5,1443,484,16,6029,1466,everyone
+36,wolfenstein-2-the-new-colossus,Wolfenstein II: The New Colossus,11,2017-10-25,4.1,4,1520,612,10,5967,1538,mature
+37,dragon-age-origins,Dragon Age: Origins,8,2009-11-03,4.4,5,1667,646,5,5887,1673,mature
+38,halo-infinite,Halo Infinite,2,2021-12-08,3.75,4,481,859,8,5849,491,teen
+39,doom-eternal,DOOM Eternal,12,2020-03-20,4.38,5,1041,648,20,5795,1068,mature
+40,fallout-3,Fallout 3,4,2008-10-28,4.08,4,1675,636,5,5656,1683,mature
+41,dead-space-2,Dead Space 2,5,2011-01-25,4.36,5,1204,647,3,5656,1210,mature
+42,halo-the-master-chief-collection,Halo: The Master Chief Collection,6,2014-11-11,4.27,5,959,608,5,5564,965,
+43,quantum-break,Quantum Break,7,2016-04-05,3.92,4,1147,503,12,5545,1161,mature
+44,grim-fandango-remastered,Grim Fandango Remastered,5,2015-01-26,3.99,5,838,550,4,5542,843,teen
+45,dead-cells,Dead Cells,10,2018-08-07,4.25,4,1383,350,17,5454,1404,teen
+46,subnautica,Subnautica,9,2018-01-23,4.24,5,1187,831,14,5442,1207,everyone-10-plus
+47,battlefield-4,Battlefield 4,5,2013-10-29,3.92,4,1358,638,4,5399,1366,
+48,goat-simulator,Goat Simulator,3,2014-04-01,3.18,3,1038,470,2,5372,1043,
+49,the-walking-dead-season-2,The Walking Dead: Season 2,10,2013-12-16,4.02,4,1273,605,3,5271,1278,
+50,yakuza-0,Yakuza 0,7,2015-03-12,4.36,5,914,478,11,5233,930,mature
+51,the-outer-worlds,The Outer Worlds,7,2019-10-25,3.9,4,1244,418,24,5155,1275,
+52,alan-wakes-american-nightmare,Alan Wake's American Nightmare,3,2012-02-22,3.4,4,723,459,2,5145,728,
+53,forza-horizon-4,Forza Horizon 4,13,2018-10-02,4.38,5,1391,444,10,5044,1404,everyone
+54,a-way-out-2018,A Way Out,5,2018-03-23,4.11,4,1284,486,16,4715,1312,mature
+55,ryse-son-of-rome,Ryse: Son of Rome,6,2013-11-22,3.57,4,834,720,8,4592,846,mature
+56,the-long-dark,The Long Dark,5,2014-09-22,3.92,4,696,373,2,4584,700,teen
+57,the-evil-within,The Evil Within,7,2014-10-12,3.96,4,974,597,4,4551,982,mature
+58,dead-by-daylight,Dead by Daylight,8,2016-06-14,3.52,4,791,1051,9,4486,801,mature
+59,frostpunk,Frostpunk,6,2018-04-24,4.17,4,826,371,8,4471,840,mature
+60,broken-age,Broken Age,5,2014-01-28,3.66,4,648,513,4,4429,652,
+61,sea-of-thieves,Sea of Thieves,10,2018-03-20,3.67,4,878,446,9,4387,889,teen
+62,star-wars-battlefront,STAR WARS Battlefront,3,2015-11-17,3.29,3,1042,611,4,4362,1046,teen
+63,the-sims-4,The Sims 4,4,2014-09-02,3.69,4,849,443,5,4333,857,teen
+64,mortal-kombat-11,Mortal Kombat 11,9,2019-04-22,4.0,4,902,465,8,4296,913,mature
+65,battlefield-3,Battlefield 3,4,2011-10-25,4.03,4,1156,672,2,4234,1162,mature
+66,mass-effect-3,Mass Effect 3,30,2012-03-05,4.4,5,1520,670,5,4015,1528,mature
+67,morrowind,The Elder Scrolls III: Morrowind,2,2002-05-01,4.39,5,882,590,7,4008,891,teen
+68,pillars-of-eternity,Pillars of Eternity,9,2015-03-26,3.96,4,650,571,4,3984,657,
+69,rage,Rage,5,2011-10-03,3.42,4,724,699,2,3905,732,mature
+70,battlefield-v,Battlefield V,5,2018-11-20,3.52,4,819,590,7,3902,831,mature
+71,crysis,Crysis,3,2007-11-12,4.02,4,935,632,2,3867,939,mature
+72,gears-5,Gears 5,5,2019-09-10,3.95,4,740,650,10,3865,756,
+73,sniper-elite-4,Sniper Elite 4,6,2017-02-13,3.58,4,626,626,2,3816,629,mature
+74,slay-the-spire,Slay the Spire,12,2019-01-22,4.38,5,846,286,7,3790,855,
+75,injustice-2,Injustice 2,7,2017-05-09,3.93,4,843,405,8,3711,852,teen
+76,sunset-overdrive,Sunset Overdrive,3,2014-10-28,3.92,4,640,361,4,3664,645,mature
+77,battlefield-bad-company-2,Battlefield: Bad Company 2,7,2010-03-02,4.12,4,772,583,2,3536,777,mature
+78,forza-horizon-5,Forza Horizon 5,12,2021-11-08,4.38,5,445,513,9,3486,457,everyone
+79,final-fantasy-xiii,FINAL FANTASY XIII,7,2009-12-17,3.45,4,620,559,1,3478,621,
+80,outer-wilds,Outer Wilds,3,2019-05-29,4.38,5,564,264,12,3439,578,everyone-10-plus
+81,it-takes-two-2,It Takes Two,9,2021-03-26,4.57,5,813,816,18,3223,838,everyone-10-plus
+82,need-for-speed,Need for Speed,3,2015-11-03,3.35,4,726,373,3,3219,730,teen
+83,overcooked-2,Overcooked! 2,4,2018-08-06,4.17,4,645,219,4,3214,653,everyone
+84,unravel,Unravel,2,2016-02-09,3.95,4,695,441,2,3201,699,everyone
+85,fable-anniversary,Fable Anniversary,4,2014-02-04,4.09,4,494,560,1,3194,496,mature
+86,mirrors-edge-catalyst,Mirror's Edge Catalyst,3,2016-06-07,3.47,4,718,429,9,3180,728,teen
+87,need-for-speed-payback,Need for Speed Payback,3,2017-11-07,3.21,3,609,448,6,3129,618,
+88,tom-clancys-ghost-recon-wildlands-2,Tom Clancy's Ghost Recon Wildlands,18,2017-03-06,3.62,4,596,574,7,3090,603,mature
+89,guardians-of-the-galaxy,Marvel's Guardians of the Galaxy,9,2021-10-26,4.37,5,481,725,13,3043,502,teen
+90,dishonored-death-of-the-outsider,Dishonored: Death of the Outsider,9,2017-09-14,4.05,4,496,469,2,3040,499,mature
+91,7-days-to-die,7 Days to Die,9,2013-12-13,3.36,4,364,538,2,3036,369,mature
+92,the-evil-within-2,The Evil Within 2,12,2017-10-11,4.14,4,676,463,4,3035,680,mature
+93,deathloop-2,Deathloop,6,2021-09-14,4.13,5,250,528,7,3008,259,mature
+94,fallout-76,Fallout 76,6,2018-11-14,2.79,1,536,386,8,2969,544,mature
+95,my-friend-pedro,My Friend Pedro,2,2019-06-19,3.89,4,637,173,4,2961,642,mature
+96,gears-of-war,Gears of War,7,2006-11-08,4.12,4,732,647,2,2912,737,mature
+97,fable-3,Fable III,8,2010-10-25,3.72,4,630,642,3,2888,633,mature
+98,doom-3,DOOM 3,2,2004-08-03,3.94,4,514,540,1,2873,519,mature
+99,need-for-speed-heat,Need for Speed Heat,3,2019-11-08,3.23,3,401,190,1,2854,404,teen
+100,need-for-speed-rivals,Need for Speed Rivals,2,2013-11-15,3.17,3,600,401,2,2832,602,everyone-10-plus
+101,day-of-the-tentacle-remastered,Day of the Tentacle Remastered,3,2016-03-21,3.67,4,356,280,3,2828,360,teen
+102,dirt-rally-20,DiRT Rally 2.0,2,2019-02-26,3.54,4,285,334,0,2800,286,
+103,battlefield-hardline,Battlefield Hardline,3,2015-03-17,3.2,3,589,616,3,2760,594,
+104,golf-with-your-friends,Golf With Your Friends,4,2016-01-29,3.83,4,294,304,1,2678,295,everyone-10-plus
+105,gears-of-war-2,Gears of War 2,22,2008-11-07,4.28,4,649,633,1,2677,652,mature
+106,moonlighter,Moonlighter,4,2018-05-28,3.76,4,403,338,4,2653,409,everyone-10-plus
+107,quake,Quake,1,1996-06-22,4.24,4,394,445,3,2631,399,
+108,alice-madness-returns,Alice: Madness Returns,3,2011-06-14,4.01,4,476,599,2,2619,481,mature
+109,dead-space-3,Dead Space 3,4,2013-02-05,3.63,4,641,519,5,2614,649,mature
+110,conan-exiles,Conan Exiles,9,2017-01-30,2.78,3,406,617,4,2561,410,adults-only
+111,full-throttle-remastered,Full Throttle Remastered,3,2017-04-17,3.95,4,389,461,3,2551,393,teen
+112,rage-2,Rage 2,11,2019-05-14,3.25,3,614,524,8,2488,629,mature
+113,dragon-age-2,Dragon Age 2,14,2011-03-08,3.83,4,725,596,6,2423,736,
+114,wasteland-2-directors-cut,Wasteland 2: Director's Cut,6,2015-10-13,3.64,4,298,562,3,2400,302,adults-only
+115,burnout-paradise,Burnout Paradise,8,2008-01-22,4.08,4,562,377,3,2390,565,everyone-10-plus
+116,dayz,DayZ,17,2013-12-16,3.03,3,361,380,2,2390,365,mature
+117,costume-quest,Costume Quest,4,2010-10-19,3.45,4,253,458,2,2366,255,teen
+118,gears-of-war-4,Gears of War 4,0,2016-10-11,3.91,4,624,657,5,2347,632,mature
+119,gears-of-war-3,Gears of War 3,16,2011-09-20,4.2,4,533,644,1,2343,536,mature
+120,yakuza-kiwami-2,Yakuza Kiwami 2,10,2017-12-07,4.36,5,308,357,6,2312,315,mature
+121,astroneer,ASTRONEER,8,2019-02-06,3.77,4,418,439,1,2248,421,everyone
+122,the-ascent-2,The Ascent,4,2021-07-29,3.31,3,214,580,7,2206,221,mature
+123,crysis-3,Crysis 3,2,2013-02-19,3.69,4,570,551,1,2204,571,mature
+124,fable-ii,Fable II,27,2008-10-21,4.12,4,462,628,2,2198,466,mature
+125,state-of-decay-2,State of Decay 2,8,2018-05-22,3.24,3,447,465,3,2185,450,mature
+126,dragon-ball-fighterz,DRAGON BALL FighterZ,6,2018-01-25,4.12,4,397,468,11,2183,411,
+127,halo-5-guardians,Halo 5: Guardians,0,2015-10-27,3.75,4,502,419,3,2180,508,teen
+128,crysis-2,Crysis 2,12,2011-03-22,3.82,4,613,609,2,2177,615,mature
+129,dirt-5,DiRT 5,2,2020-11-06,3.25,4,190,594,3,2125,193,
+130,wreckfest,Wreckfest,3,2018-06-14,3.69,4,296,330,1,2113,298,teen
+131,psychonauts-2,Psychonauts 2,10,2021-08-24,4.39,5,248,441,8,2111,257,teen
+132,gang-beasts,Gang Beasts,2,2014-08-29,3.89,4,310,243,4,2110,315,
+133,my-time-at-portia,My Time At Portia,5,2019-01-14,3.52,4,244,373,1,2081,246,everyone-10-plus
+134,back-4-blood,Back 4 Blood,5,2021-10-07,3.27,3,213,549,6,2077,221,mature
+135,outriders,Outriders,19,2021-04-01,3.37,3,245,1016,7,2013,255,mature
+136,star-wars-squadrons,Star Wars: Squadrons,3,2020-10-02,3.22,4,202,432,3,2001,206,teen
+137,contrast,Contrast,4,2013-11-15,3.31,4,278,569,1,1993,279,
+138,anthem,Anthem,0,2019-02-22,2.64,3,468,629,6,1978,474,teen
+139,superliminal,Superliminal,3,2019-11-12,4.15,4,328,200,7,1939,337,
+140,maneater,Maneater,4,2020-05-22,3.45,4,181,502,1,1929,182,mature
+141,nuclear-throne,Nuclear Throne,5,2015-12-04,4.02,4,266,354,0,1926,267,
+142,wolfenstein-youngblood,Wolfenstein: Youngblood,5,2019-07-26,2.64,3,358,159,6,1922,369,mature
+143,the-walking-dead-a-new-frontier,The Walking Dead: A New Frontier,9,2016-12-19,3.6,4,513,602,0,1856,516,
+144,yakuza-7,Yakuza: Like a Dragon,17,2020-01-16,4.32,5,206,675,8,1842,218,mature
+145,we-happy-few,We Happy Few,4,2018-08-09,3.19,3,310,550,2,1834,312,mature
+146,teenage-mutant-ninja-turtles-shredders-revenge,Teenage Mutant Ninja Turtles: Shredder's Revenge,3,2022-06-16,4.11,4,178,263,2,1785,183,
+147,house-flipper,House Flipper,6,2018-05-16,3.85,4,228,234,0,1763,231,everyone
+148,final-fantasy-xiii-2,FINAL FANTASY XIII-2,4,2011-12-15,3.56,4,261,588,1,1744,262,
+149,acid-nerve-deaths-door,Death's Door,5,2021-07-20,4.26,4,234,353,9,1739,245,everyone-10-plus
+150,supraland,Supraland,5,2019-04-05,3.92,4,141,335,2,1701,144,
+151,halo-spartan-assault,Halo: Spartan Assault,2,2013-07-18,3.07,3,206,566,0,1692,206,
+152,wasteland-3,Wasteland 3,8,2020-08-28,4.05,4,212,645,2,1684,218,teen
+153,donut-county,Donut County,2,2018-08-27,3.98,4,420,231,12,1677,433,everyone-10-plus
+154,dantes-inferno,Dante's Inferno,23,2010-02-05,3.92,4,368,637,2,1666,373,mature
+155,danganronpa-trigger-happy-havoc,Danganronpa: Trigger Happy Havoc,9,2010-11-25,4.29,4,344,289,4,1624,350,mature
+156,tunic,Tunic,4,2022-03-16,4.06,4,139,281,3,1609,143,everyone
+157,clustertruck,ClusterTruck,2,2016-09-26,3.8,4,266,197,3,1591,272,
+158,tetris-effect-connected,Tetris Effect: Connected,2,2020-11-10,4.18,4,187,37,1,1574,188,everyone
+159,battletoads,Battletoads,3,1991-06-01,3.9,4,269,253,2,1566,271,
+160,thehunter-call-of-the-wild,theHunter: Call of the Wild,4,2017-02-16,3.45,4,167,397,2,1534,170,teen
+161,skate-3,Skate 3,9,2010-05-11,4.13,4,279,482,1,1493,280,teen
+162,unpacking-2,Unpacking,3,2021-11-02,4.02,4,277,70,4,1490,285,
+163,pikuniku-2,Pikuniku,3,2019-01-03,3.92,4,187,83,4,1488,191,
+164,gears-tactics,Gears Tactics,7,2020-04-28,3.91,4,176,702,3,1431,182,adults-only
+165,bejeweled-3,Bejeweled 3,3,2010-12-07,3.52,4,141,176,0,1404,141,everyone-10-plus
+166,forager,Forager,7,2016-12-14,4.03,4,172,172,0,1400,174,
+167,fifa-21,FIFA 21,9,2020-10-06,3.24,4,206,516,2,1374,208,
+168,banjo-kazooie,Banjo-Kazooie,2,1998-05-31,4.21,5,297,654,0,1374,297,everyone
+169,recore-definitive-edition-2,ReCore: Definitive Edition,4,2017-08-29,3.27,3,93,666,1,1367,94,
+170,torment-tides-of-numenera,Torment: Tides of Numenera,3,2017-02-27,3.62,4,187,629,3,1343,192,
+171,battlefield-bad-co,Battlefield: Bad Company,1,2008-06-23,3.94,4,269,569,1,1336,272,teen
+172,ea-sports-ufc-3,EA SPORTS UFC 3,0,2018-02-02,3.59,4,291,139,0,1312,291,teen
+173,gears-of-war-judgment,Gears of War: Judgment,11,2013-03-19,3.57,4,304,535,0,1311,305,mature
+174,plants-vs-zombies-garden-warfare-3,Plants vs Zombies Garden Warfare,3,2014-02-25,3.35,3,155,573,1,1294,156,everyone-10-plus
+175,project-octopath-traveler,Octopath Traveler,6,2018-07-13,3.88,4,259,564,7,1290,269,
+176,scarlet-nexus,Scarlet Nexus,9,2021-06-25,3.59,4,129,1038,4,1288,133,teen
+177,doom-2,DOOM,0,1993-12-10,4.39,5,685,400,4,1271,692,mature
+178,snowrunner,SnowRunner,6,2020-04-28,4.0,4,198,535,3,1243,203,everyone
+179,neon-abyss,Neon Abyss,4,2020-07-13,3.39,4,102,449,1,1240,103,
+180,grounded-2,Grounded,4,2022-09-27,3.92,4,131,272,2,1213,134,teen
+181,f1-2020,F1 2020,6,2020-07-10,3.63,4,94,87,0,1202,94,everyone
+182,mortal-shell,Mortal Shell,3,2020-08-18,3.41,4,145,481,7,1194,154,mature
+183,breathedge,Breathedge,4,2021-02-25,3.79,4,219,433,0,1188,222,teen
+184,tropico-6,Tropico 6,4,2019-03-28,3.77,4,120,356,1,1183,121,everyone
+185,bridge-constructor-portal,Bridge Constructor Portal,3,2017-12-19,3.68,4,194,170,2,1155,197,everyone-10-plus
+186,yakuza-6,Yakuza 6: The Song of Life,15,2016-04-17,4.39,5,162,561,6,1150,170,mature
+187,descenders,Descenders,2,2019-05-07,3.42,4,106,272,0,1126,106,everyone
+188,rare-replay,Rare Replay,0,2015-08-04,3.7,4,168,457,1,1111,169,
+189,crackdown-3,Crackdown 3,0,2019-02-15,2.87,3,258,518,3,1073,262,mature
+190,peggle-2,Peggle 2,4,2013-12-09,3.7,4,162,331,1,1069,164,
+191,totally-accurate-battle-simulator,Totally Accurate Battle Simulator,2,2021-04-01,3.7,4,178,473,1,1069,179,
+192,viva-pinata,Viva Piñata,34,2007-10-30,3.55,4,152,478,2,1066,154,everyone
+193,monster-train,Monster Train,7,2020-05-20,4.11,4,94,348,0,1052,94,
+194,a-plague-tale-requiem,A Plague Tale: Requiem,4,2022-10-17,4.09,5,54,292,1,1047,57,mature
+195,serious-sam-4-planet-badass,Serious Sam 4,4,2020-09-24,3.2,4,148,382,1,1031,153,
+196,forgotten-city,The Forgotten City,6,2021-07-28,4.26,5,151,242,3,1017,155,teen
+197,medal-of-honor-airborne-2,Medal of Honor: Airborne,2,2007-10-06,3.72,4,232,618,0,991,232,teen
+198,weird-west,Weird West,5,2022-03-31,3.82,4,88,365,2,984,91,mature
+199,powerwash-simulator,PowerWash Simulator,10,2020-04-03,3.98,5,48,360,1,968,50,
+200,max-the-curse-of-brotherhood,Max: The Curse of Brotherhood,2,2013-12-20,3.49,4,148,386,1,961,150,
+201,super-luckys-tale,Super Lucky's Tale,2,2017-11-07,3.38,4,190,327,0,958,192,
+202,paradise-killer,Paradise Killer,4,2020-09-03,4.03,5,36,227,0,950,36,mature
+203,fifa-22-xbox-one,FIFA 22,11,2021-09-27,3.38,4,131,238,1,949,133,everyone
+204,trailmakers,Trailmakers,3,2020-05-21,3.36,4,59,359,0,946,59,
+205,ssx,SSX,17,2012-02-28,3.48,4,156,439,1,937,157,everyone-10-plus
+206,sea-of-solitude,Sea of Solitude,2,2019-07-05,3.27,3,135,251,3,935,139,teen
+207,bugsnax,Bugsnax,5,2020-11-12,3.6,4,123,464,3,933,126,everyone-10-plus
+208,battlefield-1943,Battlefield 1943,1,2009-07-08,3.76,4,156,539,0,926,156,teen
+209,kill-it-with-fire-2,Kill It With Fire,2,2020-08-13,3.39,4,35,79,0,910,36,teen
+210,perfect-dark,Perfect Dark,10,2000-05-22,3.93,5,165,391,1,908,166,mature
+211,lonely-mountains-downhill,Lonely Mountains: Downhill,2,2019-10-23,3.62,4,147,302,2,893,149,
+212,the-bards-tale-iv-directors-cut,The Bard's Tale IV: Director's Cut,3,2019-08-27,3.09,3,46,460,0,882,46,
+213,costume-quest-2,Costume Quest 2,5,2014-10-07,3.78,4,93,416,0,866,93,everyone-10-plus
+214,peggle,Peggle,2,2007-02-27,3.91,4,161,231,0,860,162,everyone
+215,halo-wars-definitive-edition,Halo Wars: Definitive Edition,3,2017-04-20,3.67,4,143,533,1,836,144,
+216,scorn-episode-one,Scorn,3,2022-10-14,3.47,4,66,434,1,827,68,
+217,sniper-elite-5,Sniper Elite 5,8,2022-05-25,3.55,4,47,651,0,826,47,rating-pending
+218,monster-sanctuary,Monster Sanctuary,3,2020-12-08,3.5,3,36,209,0,816,36,
+219,genesis-noir,Genesis Noir,2,2021-03-26,3.68,4,50,472,0,811,50,
+220,art-of-rally,art of rally,2,2020-09-23,3.34,3,101,202,2,805,105,
+221,perfect-dark-zero,Perfect Dark Zero,2,2010-06-01,3.03,3,102,443,1,804,103,mature
+222,road-96,Road 96,6,2021-08-16,3.95,4,126,490,1,800,128,teen
+223,trek-to-yomi,Trek to Yomi,2,2022-05-05,3.52,4,95,419,4,797,99,
+224,halo-wars-2,Halo Wars 2,0,2017-02-21,3.82,4,163,591,2,784,165,teen
+225,banjo-kazooie-n-n-b,Banjo Kazooie: N n B,0,2008-11-11,3.22,4,117,632,0,774,117,everyone-10-plus
+226,i-am-fish,I Am Fish,2,2021-09-16,3.22,4,45,296,0,768,45,teen
+227,telling-lies,Telling Lies,4,2019-08-23,3.64,4,117,273,3,766,121,mature
+228,kameo,Kameo,0,2009-08-11,3.14,3,93,374,0,742,93,teen
+229,secret-neighbor,Secret Neighbor,5,2019-10-23,3.21,3,32,249,0,731,33,everyone-10-plus
+230,disneyland-adventures,Disneyland Adventures,1,2017-10-31,2.5,1,94,473,0,728,94,everyone-10-plus
+231,coffee-talk,Coffee Talk,4,2020-01-28,3.72,4,78,181,1,728,79,teen
+232,the-pedestrian,The Pedestrian,2,2020-01-29,4.17,4,100,265,2,725,104,everyone
+233,the-artful-escape,The Artful Escape,4,2021-09-09,4.12,4,95,178,4,711,99,everyone-10-plus
+234,project-wingman,Project Wingman,2,2020-11-30,4.0,4,20,355,0,708,20,
+235,nobody-saves-the-world,Nobody Saves the World,5,2022-01-17,3.84,4,72,287,1,708,74,teen
+236,skul-the-hero-slayer,Skul: The Hero Slayer,3,2021-01-21,3.51,4,92,259,0,702,92,
+237,zombie-army-dead-war-4,Zombie Army 4: Dead War,7,2020-02-04,3.39,4,81,264,2,700,83,mature
+238,totally-reliable-delivery-service,Totally Reliable Delivery Service,1,2020-04-01,2.85,3,105,197,1,693,106,everyone
+239,zumas-revenge,Zuma's Revenge!,2,2009-09-15,3.82,4,107,360,0,683,107,everyone
+240,fe,Fe,2,2018-02-16,3.06,3,116,296,4,661,120,everyone
+241,fight-night-champion,FIGHT NIGHT CHAMPION,0,2010-04-26,4.0,4,122,329,2,646,124,mature
+242,viva-pinata-tip,Viva Piñata: TIP,0,2010-07-15,3.22,3,77,323,2,637,79,everyone
+243,doom-64,Doom 64,2,1997-03-31,3.96,4,88,329,0,636,89,mature
+244,crown-trick,Crown Trick,3,2020-10-16,3.5,4,22,375,0,635,22,
+245,aliens-fireteam,Aliens: Fireteam Elite,7,2021-08-23,2.88,3,54,403,4,625,58,
+246,lawn-mowing-simulator,Lawn Mowing Simulator,2,2021-08-10,3.38,4,16,382,0,615,16,everyone-10-plus
+247,neoverse-2,NEOVERSE,1,2019-01-09,3.03,4,31,462,0,612,31,
+248,crysis-remastered,Crysis Remastered,2,2020-09-18,3.25,3,77,343,0,604,77,mature
+249,zuma,Zuma,0,2003-12-03,3.83,4,120,362,1,604,121,everyone-10-plus
+250,embr,Embr,2,2020-05-21,3.07,3,14,178,0,601,15,everyone-10-plus
+251,banjo-tooie,Banjo-Tooie,2,2000-11-20,4.03,4,118,778,1,581,119,everyone
+252,new-super-luckys-tale,New Super Lucky's Tale,4,2019-11-08,3.79,4,60,251,2,580,62,everyone
+253,chivalry-2,Chivalry 2,4,2021-06-08,3.67,4,32,420,1,560,33,adults-only
+254,rocket-arena-2,Rocket Arena,2,2020-07-13,2.13,1,58,527,2,554,60,teen
+255,f1-2021,F1 2021,15,2021-07-16,3.93,4,42,82,0,544,42,everyone
+256,as-dusk-falls,As Dusk Falls,7,2022-07-19,3.98,4,63,268,1,523,66,mature
+257,lost-in-random,Lost in Random,2,2021-09-10,3.6,4,26,587,4,516,30,everyone-10-plus
+258,chorus,Chorus,2,2021-12-02,3.55,4,43,250,1,513,44,teen
+259,the-riftbreaker,The Riftbreaker,5,2021-10-14,3.93,4,57,548,2,508,59,
+260,exo-one,Exo One,2,2021-11-18,3.64,4,71,169,0,497,72,
+261,far-changing-tides,FAR: Changing Tides,4,2022-03-01,3.76,4,62,370,1,494,63,
+262,empire-of-sin,Empire of Sin,6,2020-12-01,2.81,3,42,175,0,484,42,mature
+263,skatebird,SkateBIRD,1,2021-09-16,1.94,1,50,179,2,483,52,teen
+264,cooking-simulator,Cooking Simulator,3,2019-06-05,3.85,4,59,369,1,481,60,
+265,bleeding-edge,Bleeding Edge,2,2020-03-24,2.71,3,81,279,2,470,83,teen
+266,jetpac-refuelled,Jetpac Refuelled,0,2010-01-04,2.5,3,42,302,0,462,42,everyone
+267,solasta-crown-of-the-magister,Solasta: Crown of the Magister,5,2021-05-27,3.33,4,34,296,2,459,36,
+268,aragami-2,Aragami 2,3,2021-09-17,3.25,3,55,365,1,453,57,mature
+269,two-point-campus,Two Point Campus,7,2022-08-09,3.6,4,15,138,0,438,15,teen
+270,feeding-frenzy,Feeding Frenzy,0,2004-02-11,3.0,3,50,188,1,436,51,everyone
+271,midnight-fight-express,Midnight Fight Express,2,2022-08-23,3.47,4,29,117,1,428,30,
+272,edge-of-eternity,Edge of Eternity,2,2018-12-05,3.18,4,27,589,0,403,28,
+273,heavy-weapon,Heavy Weapon,0,2008-01-01,2.81,4,43,357,0,394,43,teen
+274,jurassic-world-evolution-2-2,Jurassic World Evolution 2,3,2021-11-09,3.38,3,21,272,0,384,21,teen
+275,backbone,Backbone,5,2021-06-08,3.47,4,58,246,1,381,59,
+276,lake,Lake,3,2021-09-01,3.37,3,66,261,2,373,68,mature
+277,bejeweled-2,Bejeweled 2,2,2004-11-05,3.38,4,52,157,0,371,52,everyone
+278,grid-legends,GRID Legends,3,2022-02-25,3.35,4,19,272,0,355,20,everyone-10-plus
+279,naraka-bladepoint,Naraka Bladepoint,5,2021-08-11,3.22,4,27,676,0,353,27,
+280,disc-room-2,Disc Room,2,2020-10-22,3.67,4,44,178,1,336,45,
+281,farming-simulator-22,Farming Simulator 22,6,2021-11-22,3.44,4,18,406,0,333,18,everyone
+282,immortality,Immortality,6,2022-08-29,4.38,5,21,373,0,316,21,
+283,screamride,ScreamRide,0,2015-02-16,2.74,3,39,473,0,306,39,everyone-10-plus
+284,shredders,Shredders,4,2022-03-17,2.62,3,23,98,0,293,24,
+285,dreamscaper-2,Dreamscaper,2,2021-08-05,3.4,4,30,530,0,289,30,everyone-10-plus
+286,escape-academy,Escape Academy,4,2022-07-13,4.0,4,19,306,2,287,21,
+287,tinykin,Tinykin,4,2022-08-29,4.19,5,24,193,1,286,26,
+288,a-memoir-blue,A Memoir Blue,3,2022-03-24,3.5,4,37,253,1,257,38,
+289,madden-nfl-21,Madden NFL 21,3,2020-08-25,2.4,1,28,448,2,251,30,everyone
+290,mechwarrior-5-mercenaries,MechWarrior 5: Mercenaries,5,2019-12-10,3.19,4,26,279,0,251,27,
+291,recompile,Recompile,2,2021-08-19,2.83,3,24,315,0,247,24,
+292,you-suck-at-parking,You Suck at Parking,15,2022-09-14,3.3,4,10,39,0,245,10,everyone
+293,citizen-sleeper,Citizen Sleeper,6,2022-05-05,4.12,5,16,318,0,240,16,teen
+294,ea-sports-rory-mcilroy-pga-tour,EA SPORTS Rory McIlroy PGA TOUR,0,2015-07-14,3.37,4,29,447,1,236,30,everyone
+295,eiyuden-chronicle-rising,Eiyuden Chronicle: Rising,4,2022-05-10,3.54,4,12,588,1,233,13,
+296,flynn-son-of-crimson,Flynn: Son of Crimson,8,2021-09-15,3.3,4,21,379,1,231,23,
+297,power-rangers-battle-for-the-grid,Power Rangers: Battle For The Grid,1,2019-03-26,2.89,3,19,259,0,220,19,teen
+298,wasteland-remastered,Wasteland Remastered,1,2020-02-24,2.81,3,16,79,0,216,16,
+299,ninja-gaiden-3,Ninja Gaiden 3,0,2012-02-14,3.25,4,39,644,1,213,40,mature
+300,dead-space-ignition,Dead Space Ignition,0,2010-10-12,2.8,3,30,459,0,208,30,mature
+301,pupperazzi,Pupperazzi,2,2022-01-20,2.84,4,19,176,0,207,19,everyone
+302,young-souls,Young Souls,5,2022-03-10,3.21,4,14,219,0,207,14,
+303,my-friend-peppa-pig,My Friend Peppa Pig,3,2021-10-22,3.0,3,12,133,1,207,13,
+304,mighty-goose,Mighty Goose,4,2021-06-05,3.86,4,21,242,0,203,21,
+305,black,BLACK,3,2006-02-24,4.07,4,85,58,0,197,86,mature
+306,bug-fables,Bug Fables: The Everlasting Sapling,2,2019-11-20,4.23,5,13,130,0,196,13,everyone
+307,olija,Olija,2,2021-01-28,3.54,4,24,51,0,193,24,
+308,phoenix-point,Phoenix Point,0,2019-12-03,3.13,4,49,336,1,188,52,
+309,archvale,Archvale,12,2021-12-02,3.54,4,26,272,0,182,26,
+310,windjammers-2,Windjammers 2,1,2022-01-20,4.04,4,28,347,0,180,28,everyone
+311,feeding-frenzy-2,Feeding Frenzy 2,0,2008-01-01,3.5,3,20,287,0,178,20,everyone
+312,yakuza-remastered-collection,Yakuza Remastered Collection,0,2019-08-20,4.06,5,17,385,0,173,17,mature
+313,lost-words-beyond-the-page,Lost Words: Beyond the Page,4,2021-04-05,4.08,4,12,173,0,170,12,everyone
+314,ben-10-power-trip,Ben 10: Power Trip,1,2020-10-09,2.57,3,13,328,0,165,14,
+315,space-warlord-organ-trading-simulator,Space Warlord Organ Trading Simulator,1,2021-12-07,2.59,3,22,190,0,162,22,
+316,nhl-21,NHL 21,0,2020-10-16,3.43,4,23,250,0,159,23,everyone-10-plus
+317,moonscars,Moonscars,0,2022-09-27,2.62,4,8,453,0,152,8,
+318,beacon-pines,Beacon Pines,3,2022-09-22,4.1,4,10,400,0,152,10,teen
+319,infernax,Infernax,7,2022-02-14,4.04,5,22,200,0,149,24,mature
+320,the-gunk,The Gunk,0,2021-12-16,3.69,4,37,438,1,149,39,
+321,super-mega-baseball-3,Super Mega Baseball 3,4,2020-05-13,3.5,5,8,359,0,127,8,everyone
+322,loot-river,Loot River,4,2022-05-03,3.62,3,8,244,0,125,8,mature
+323,nhl-94-rewind,NHL 94 REWIND,0,2020-10-30,3.46,4,12,11,1,123,13,
+324,undungeon-2,Undungeon,1,2021-11-18,3.0,3,7,390,0,111,8,
+325,fuga-melodies-of-steel,Fuga: Melodies of Steel,6,2021-07-28,0.0,0,1,477,0,109,1,
+326,madden-nfl-22,Madden NFL 22,2,2021-08-17,2.0,1,6,453,0,101,6,
+327,moonglow-bay,Moonglow Bay,10,2021-10-26,3.5,4,10,198,0,98,10,
+328,chinatown-detective-agency,Chinatown Detective Agency,1,2022-04-07,0.0,0,3,439,0,82,3,
+329,ufc-4,UFC 4,0,2020-08-14,3.63,4,37,492,1,78,38,teen
+330,the-anacrusis,The Anacrusis,2,2022-01-13,0.0,0,2,454,0,77,4,
+331,race-with-ryan,Race With Ryan,2,2019-11-01,0.0,0,3,422,1,77,4,everyone
+332,anvil,Anvil,5,2021-12-01,0.0,0,4,562,0,70,4,
+333,immortal-realms-vampire-wars,Immortal Realms: Vampire Wars,3,2020-08-27,3.5,4,6,486,0,61,6,
+334,the-last-kids-on-earth-and-the-staff-of-doom,The Last Kids on Earth and the Staff of Doom,0,2021-06-04,0.0,0,3,201,0,52,3,
+335,transformers-battlegrounds,TRANSFORMERS: BATTLEGROUNDS,1,2020-10-23,0.0,0,4,264,0,52,4,
+336,floppy-knights,Floppy Knights,2,2022-05-24,0.0,0,3,129,0,51,3,everyone-10-plus
+337,cricket-22,Cricket 22,15,2021-10-31,0.0,0,3,282,0,46,3,
+338,bassmaster-fishing-2022,Bassmaster Fishing 2022,0,2021-10-28,0.0,0,2,165,0,42,2,
+339,blinx,Blinx: The Time Sweeper,0,2002-10-07,3.5,3,10,368,0,32,10,everyone
+340,ghostbusters-spirits-unleashed,Ghostbusters: Spirits Unleashed,0,2022-10-18,0.0,0,0,500,0,29,0,
+341,motogp-22,MotoGP 22,4,2022-04-21,0.0,0,2,327,0,22,2,everyone
+342,crimson-skies-high-road-to-revenge,Crimson Skies: High Road to Revenge,0,2003-11-11,0.0,5,5,450,0,21,5,teen
+343,grid-3,GRID,0,2019-10-10,3.83,4,6,0,0,20,6,
+344,just-cause-4-reloaded,Just Cause 4: Reloaded,0,2019-11-07,3.0,3,6,374,0,19,6,
+345,pac-man-museum-2,PAC-MAN MUSEUM+,1,2022-05-27,0.0,0,1,323,0,15,1,everyone
+346,paw-patrol-the-movie-adventure-city-calls,PAW Patrol The Movie: Adventure City Calls,0,2021-08-13,0.0,0,3,169,0,13,3,
+347,nhl-22,NHL 22,0,2021-10-12,0.0,4,2,425,2,7,5,everyone-10-plus
+348,mlb-the-show-22,MLB The Show 22,0,2022-04-01,0.0,0,1,35,0,6,1,everyone
+349,the-bards-tale-arpg-remastered-and-resnarkled,The Bard's Tale ARPG: Remastered and Resnarkled,0,2020-06-17,0.0,0,0,355,0,3,0,teen
