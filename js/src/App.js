@@ -10,15 +10,6 @@ function App() {
   const [recommendations, setRecommendations] = useState([]);
 
   const Rate = (gameIndex, value) => {
-    const requestOptions = {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json'}
-    };
-    console.log(`Rate call: ${requestOptions}`)
-    fetch(`http://localhost:8000/api/v1/games/preference?rating=${games[gameIndex].rating}&esrb_rating=${games[gameIndex].esrb_rating}&playtime=${games[gameIndex].playtime}&released=${games[gameIndex].released}&liked=${value}`, requestOptions)
-      .catch((err) => {
-        console.log(err.message);
-      });
     const newRatings = ratings;
     newRatings[gameIndex] = value;
     console.log(`Rated game ${games[gameIndex].name} with ${value}`);
@@ -39,14 +30,15 @@ function App() {
   }
 
   const getRecommendationsR = () => {
-    console.log("TODO")
+    const ids = games.map((game) => game.id);
     const requestOptions = {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json'},
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ games: ids, liked: ratings })
     };
     fetch('http://localhost:8000/api/v1/games/recommend', requestOptions)
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(data => setRecommendations(data.games));
   }
 
 
