@@ -142,3 +142,48 @@ get_5_predicted_games <- function(game) {
   return(sort(querygrain(j_game, nodes = "G")$G, decreasing=T)[1:5])
 }
 
+set_preference <- function(game_slug, liked) {
+  game <- rawg[rawg$slug == game_slug, ]
+  if(as.numeric(liked) == 1.0) {
+    games_no <<- games_no + 1.0
+    all_ratings <<- all_ratings + as.numeric(game$rating)
+    all_playtime <<- all_playtime + as.numeric(game$playtime)
+    all_released <<- all_released + as.integer(substr(game$released, 1, 4))
+    esrb_dict[[game$esrb_rating]] <<- esrb_dict[[game$esrb_rating]] + 1.0
+  }
+  if(as.numeric(liked) == -1.0) {
+    esrb_dict[[game$esrb_rating]] <<- esrb_dict[[game$esrb_rating]] - 1.0
+  }
+}
+
+map_game <- function(game_slug) {
+  game <- rawg[rawg$slug == game_slug, ]
+  ls <- list("id"= game$slug, "name"= game$name)
+  return(ls)
+}
+
+set_preferences_and_recommend <- function(games_list, liked_list) {
+
+  games_no <<- 0.0
+  all_ratings  <<- 0.0
+  all_playtime  <<- 0.0
+  all_released  <<- 0.0
+  esrb_dict <<- list("adults-only" = 0, "mature" = 0, "teen" = 0, 
+                      "everyone-10-plus" = 0, "everyone" = 0)
+
+  for (i in 1:length(games_list)) {
+    set_preference(games_list[[i]], liked_list[[i]])
+  }
+
+  game <- list(rating = all_ratings / games_no,
+                esrb_rating = names(esrb_dict[order(unlist(esrb_dict))[5]]),
+                playtime = all_playtime / games_no,
+                released = all_released / games_no)
+  games <- names(get_5_predicted_games(game))
+
+  recommended_games = list("games" = list())
+  for(i in 1:length(games)) {
+    recommended_games[[1]][[i]] <- map_game(games[[i]])
+  }
+  return(recommended_games)
+}
