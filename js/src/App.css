@@ -6,3 +6,8 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.recommend-games {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} 

@@ -158,7 +158,7 @@ set_preference <- function(game_slug, liked) {
 
 map_game <- function(game_slug) {
   game <- rawg[rawg$slug == game_slug, ]
-  ls <- list("id"= game$slug, "name"= game$name)
+  ls <- list("id"=game$slug, "name"=game$name, "image"=game$background_image)
   return(ls)
 }
 
