@@ -10,6 +10,15 @@ function App() {
   const [recommendations, setRecommendations] = useState([]);
 
   const Rate = (gameIndex, value) => {
+    const requestOptions = {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json'}
+    };
+    console.log(`Rate call: ${requestOptions}`)
+    fetch(`http://localhost:8000/api/v1/games/preference?rating=${games[gameIndex].rating}&esrb_rating=${games[gameIndex].esrb_rating}&playtime=${games[gameIndex].playtime}&released=${games[gameIndex].released}&liked=${value}`, requestOptions)
+      .catch((err) => {
+        console.log(err.message);
+      });
     const newRatings = ratings;
     newRatings[gameIndex] = value;
     console.log(`Rated game ${games[gameIndex].name} with ${value}`);
@@ -28,6 +37,18 @@ function App() {
       .then(response => response.json())
       .then(data => setRecommendations(data.games));
   }
+
+  const getRecommendationsR = () => {
+    console.log("TODO")
+    const requestOptions = {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json'},
+    };
+    fetch('http://localhost:8000/api/v1/games/recommend', requestOptions)
+      .then(response => response.json())
+      .then(data => console.log(data));
+  }
+
 
   const addGame = () => {
     fetch('http://localhost:3000/api/v1/games')
@@ -78,7 +99,10 @@ function App() {
         })}&nbsp;
         </div>
         <div className="recommend-games">
-          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit </Button>{' '}
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit Prolog </Button>{' '}
+        </div>
+        <div className="recommend-games">
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendationsR()} > Submit R </Button>{' '}
         </div>
         <div className="add-game">
           <Button type="button" value="AddGame" variant="outline-primary" onClick={() => addGame()} > Add more </Button>{' '}

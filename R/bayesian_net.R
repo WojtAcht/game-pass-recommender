@@ -139,6 +139,6 @@ get_5_predicted_games <- function(game) {
   state_released <- as.character(state_released)
   j_game <- setEvidence(j_game, nodes = "RELEASED", states = state_released)
   # Returns named vector - to obtain slug values use: names(get_5_predicted_games(game))
-  return(sort(querygrain(j_released, nodes = "G")$G, decreasing=T)[1:5])
+  return(sort(querygrain(j_game, nodes = "G")$G, decreasing=T)[1:5])
 }
 
