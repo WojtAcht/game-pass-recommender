@@ -29,6 +29,19 @@ function App() {
       .then(data => setRecommendations(data.games));
   }
 
+  const getRecommendationsR = () => {
+    const ids = games.map((game) => game.id);
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ games: ids, liked: ratings })
+    };
+    fetch('http://localhost:8000/api/v1/games/recommend', requestOptions)
+      .then(response => response.json())
+      .then(data => setRecommendations(data.games));
+  }
+
+
   const addGame = () => {
     fetch('http://localhost:3000/api/v1/games')
       .then((res) => res.json())
@@ -78,7 +91,10 @@ function App() {
         })}&nbsp;
         </div>
         <div className="recommend-games">
-          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit </Button>{' '}
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendations()} > Submit Prolog </Button>{' '}
+        </div>
+        <div className="recommend-games">
+          <Button type="button" value="Submit" variant="primary" size="lg" onClick={() => getRecommendationsR()} > Submit R </Button>{' '}
         </div>
         <div className="add-game">
           <Button type="button" value="AddGame" variant="outline-primary" onClick={() => addGame()} > Add more </Button>{' '}
